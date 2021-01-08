@@ -1,0 +1,43 @@
+Installer eslint & changeCase
+
+allert modifier le fichier de props des racourcis pour ajouter les lignes suivantes :
+
+// Placer vos combinaisons de touches dans ce fichier pour remplacer les valeurs par défaut
+[{
+        ​​​​​​​​
+        "key": "ctrl+alt+l",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    }
+    ​​​​​​​​, {
+        ​​​​​​​​
+        "key": "ctrl+alt+o",
+        "command": "eslint.executeAutofix"
+    }
+    ​​​​​​​​, {
+        ​​​​​​​​
+        "key": "ctrl+shift+u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus"
+    }
+    ​​​​​​​​, {
+        ​​​​​​​​
+        "key": "ctrl+shift+l",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorTextFocus"
+    }
+    ​​​​​​​​, {
+        ​​​​​​​​
+        "key": "ctrl+alt+c",
+        "command": "extension.changeCase.camel",
+        "when": "editorTextFocus"
+    }
+    ​​​​​​​​, {
+        ​​​​​​​​
+        "key": "ctrl+alt+s",
+        "command": "extension.changeCase.constant",
+        "when": "editorTextFocus"
+    }
+    ​​​​​​​​
+]
+
